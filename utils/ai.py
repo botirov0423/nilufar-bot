@@ -38,7 +38,7 @@ Example: "Okay, I will tell him! ||FORWARD: They said they love you||"
 """
 
 model = genai.GenerativeModel(
-  model_name="gemini-2.0-flash-lite",
+  model_name="gemini-1.5-flash-8b",
   generation_config=generation_config,
   system_instruction=system_instruction,
 )
@@ -56,3 +56,4 @@ async def get_ai_response(text: str, context: str = "") -> str:
         traceback.print_exc()
         print(f"AI Error: {e}")
         return f"Kechirasiz, biroz xatolik yuz berdi. / Sorry, an error occurred.\nError details: {str(e)}"
+
