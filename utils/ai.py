@@ -38,7 +38,7 @@ Example: "Okay, I will tell him! ||FORWARD: They said they love you||"
 """
 
 model = genai.GenerativeModel(
-  model_name="gemini-1.5-flash",
+  model_name="gemini-2.0-flash",
   generation_config=generation_config,
   system_instruction=system_instruction,
 )
